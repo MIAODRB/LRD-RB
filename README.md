@@ -43,12 +43,9 @@ The dataset is distributed as a compressed archive:
 - Link: `https://pan.baidu.com/s/14v0ourLgPEB-pxrow1s2QA`  
 - Extraction code: `d7uv`
 
-After downloading, unzip the archive:
-
-```bash
-unzip LRDRB.zip
 
 ## 3. Citation
+```bash
 @article{miao2025lrd,
   title   = {LRD-RB: The First Large-Scale Dataset With Rotated Bounding Boxes for Automated Lunar Rockfall Detection},
   author  = {Miao, Dingruibo and Yan, Jianguo and Tu, Zhigang and Barriot, Jean-Pierre},
