@@ -21,13 +21,12 @@ Key characteristics:
 - **Number of source images:** 500 NAC images carefully selected by planetary science experts.
 - **Image patches:** 11,697 cropped patches (1024 × 1024 pixels) suitable for deep learning–based object detection.
 - **Annotations:** 58,298 lunar rockfall instances with **rotated bounding boxes (RBBs)**.
-- **Spatial resolution:** Mostly around 0.5 m/pixel, with the vast majority between 0.4 m/pixel and 1.75 m/pixel.
-- **Rockfall size:** Estimated diameters mainly between 2–15 m, with most samples in the 4–7 m range.
 - **Diversity:** 
   - Wide range of solar incidence and phase angles.
   - Broad geographic coverage, including high-latitude and equatorial regions.
   - Various terrain types (mare, highlands, crater rims), providing rich variability for model training.
-
+- **Data Format:**
+  - Each image patch has a corresponding text annotation file. Each line in an annotation file contains: (x1 y1 x2 y2 x3 y3 x4 y4 category). (x1, y1), ..., (x4, y4) are the four vertices of the rotated bounding box (pixel coordinates). category is the class label (e.g., rockfall).
 The dataset is split into **train / val / test** with a ratio of **8 : 1 : 1**.
 
 ---
@@ -48,3 +47,14 @@ After downloading, unzip the archive:
 
 ```bash
 unzip LRDRB.zip
+
+## 3. Citation
+@article{miao2025lrd,
+  title   = {LRD-RB: The First Large-Scale Dataset With Rotated Bounding Boxes for Automated Lunar Rockfall Detection},
+  author  = {Miao, Dingruibo and Yan, Jianguo and Tu, Zhigang and Barriot, Jean-Pierre},
+  journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume  = {18},
+  year    = {2025},
+  doi     = {10.1109/JSTARS.2025.3582117}
+}
+
